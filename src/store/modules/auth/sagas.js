@@ -15,7 +15,10 @@ export function* signIn({ payload }) {
         const { token, user } = response.data;
 
         if (user.provider) {
-            Alert.alert('Falha na autenticação', 'O usuário não pode ser prestador de serviços');
+            Alert.alert(
+                'Falha na autenticação',
+                'O usuário não pode ser prestador de serviços'
+            );
 
             return;
         }
@@ -38,8 +41,7 @@ export function* signUp({ payload }) {
         yield call(api.post, 'users', {
             name,
             email,
-            password,
-            provider: true
+            password
         });
 
         // history.push('/');
