@@ -45,10 +45,13 @@ export default function SelectProvider({ navigation }) {
                                 }
                             >
                                 <Avatar
-                                    sourcer={{
+                                    source={{
                                         uri: item.avatar
-                                            ? item.avatar.url
-                                            : `https://api.adorable.io/avatar/50/${item.name}`
+                                            ? item.avatar.url.replace(
+                                                  'localhost',
+                                                  '192.168.10.1'
+                                              )
+                                            : `http://api.adorable.io/avatar/50/${item.name}.png`
                                     }}
                                 />
                                 <Name>{item.name}</Name>

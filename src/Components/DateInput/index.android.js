@@ -30,7 +30,7 @@ export default function DateInput({ date, onChange }) {
     return (
         <Container>
             <DateButton onPress={handleOpen}>
-                <Icon name="event" color="FFF" size={20} />
+                <Icon name="event" color="#FFF" size={20} />
                 <DateText>{dateFormatted}</DateText>
             </DateButton>
         </Container>
