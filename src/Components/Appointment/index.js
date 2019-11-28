@@ -21,14 +21,10 @@ export default function Appointment({ data, onCancel }) {
     const currentDate = new Date(data.date);
 
     const dateParsed = useMemo(() => {
-        return formatRelative(
-            addMinutes(currentDate, currentDate.getTimezoneOffset()),
-            new Date(),
-            {
-                locale: pt,
-                addSuffix: true
-            }
-        );
+        return formatRelative(currentDate, new Date(), {
+            locale: pt,
+            addSuffix: true
+        });
     });
 
     return (
