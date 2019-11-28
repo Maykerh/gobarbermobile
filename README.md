@@ -1,4 +1,4 @@
-Versão mobile da aplicação https://github.com/Maykerh/gobarber-web. Consumindo o back-end https://github.com/Maykerh/devBarber.
+Versão mobile da aplicação https://github.com/Maykerh/gobarber-web. Consumindo o back-end https://github.com/Maykerh/gobarber-backend.
 
 Construída com React Native, Redux, Saga e Styled Components.
 
