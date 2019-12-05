@@ -1,16 +1,34 @@
-Versão mobile da aplicação https://github.com/Maykerh/gobarber-web. Consumindo o back-end https://github.com/Maykerh/gobarber-backend.
+<h4 align="center">
+  MeetDev - Mobile
+</h4>
 
-Construída com React Native, Redux, Saga e Styled Components.
+App mobile de agendamento de meetups desenvolvido durante o [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) com as tecnologias: React Native, Redux, Saga e Styled Components.
+
+[Versão web](https://github.com/Maykerh/meetdev-front)
+
+## :eyes: Preview
 
 |Cadastro de usuário|Login|Perfil do usuário|
 | ------------ | ------------ | ------------ |
-|<img src="https://raw.githubusercontent.com/Maykerh/gobarbermobile/master/examples/cadastro.png" width="200" height="200">|<img src="https://raw.githubusercontent.com/Maykerh/gobarbermobile/master/examples/login.png" width="200" height="200">|<img src="https://raw.githubusercontent.com/Maykerh/gobarbermobile/master/examples/perfil.png" width="200" height="200">|
+|<img src="https://raw.githubusercontent.com/Maykerh/meetupmobile/master/exemplos/cadastro.png" width="200" height="200">|<img src="https://raw.githubusercontent.com/Maykerh/meetupmobile/master/exemplos/login.png" width="200" height="200">|<img src="https://raw.githubusercontent.com/Maykerh/meetupmobile/master/exemplos/perfil.png" width="200" height="200">|
 
 
-|Dashboard|Cadastro de agendamento |Seleção de horário|
-| ------------ | ------------ | ------------ |
-|<img src="https://raw.githubusercontent.com/Maykerh/gobarbermobile/master/examples/dashboard.png" width="200" height="200">|<img src="https://raw.githubusercontent.com/Maykerh/gobarbermobile/master/examples/lista%20de%20prestadores.png" width="200" height="200">|<img src="https://raw.githubusercontent.com/Maykerh/gobarbermobile/master/examples/horários%20disponíveis.png" width="200" height="200">|
+|Dashboard|Minhas inscrições |
+| ------------ | ------------ |
+|<img src="https://raw.githubusercontent.com/Maykerh/meetupmobile/master/exemplos/dashboard.png" width="200" height="200">|<img src="https://raw.githubusercontent.com/Maykerh/meetupmobile/master/exemplos/minhas%20inscrições.png" width="200" height="200">|
 
-|Confirmação do agendamento|
-| ------------ |
-|<img src="https://raw.githubusercontent.com/Maykerh/gobarbermobile/master/examples/confirmação%20de%20agendamento.png" width="200" height="200">|
+## :running: Como rodar a aplicação
+
+Primeiro é necessário subir a [Api construída em NodeJs](https://github.com/Maykerh/MeetDev) 
+
+```bash
+# Clonar o repositório
+$ git clone https://github.com/Maykerh/meetupmobile
+
+# Instalar as dependências utilizando yarn
+$ cd meetupmobile
+$ yarn install
+
+# iniciar o React Native
+$ react-native run-android
+```
